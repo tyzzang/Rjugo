@@ -1,1 +1,11 @@
 rootProject.name = 'Rjugo'
+
+// 멀티 모듈이 아니라면 include() 도 필요 없습니다.
+
+dependencyResolutionManagement {
+    repositoriesMode.set(RepositoriesMode.FAIL_ON_PROJECT_REPOS)
+    repositories {
+        gradlePluginPortal()
+        mavenCentral()
+    }
+}
